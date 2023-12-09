@@ -1,0 +1,180 @@
+/* Reset default margin and padding for all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Global styling for the body */
+body {
+    width: 99%;
+    height: 97%;
+    background-image: url('Background2.png');
+    background-size: cover;
+}
+
+/* Top navigation section styling */
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 30px;
+    color: rgb(102, 177, 110);
+}
+
+/* Navigation links styling */
+.nav {
+    position: relative;
+    left: -180px;
+}
+
+a {
+    padding: 5px 15px;
+    color:  rgb(102, 177, 110);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* Search icon styling */
+.search {
+    font-size: 25px;
+}
+
+.search i {
+    padding: 5px 20px;
+}
+
+/* Heading section styling */
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 65px;
+    align-items: center;
+}
+
+/* Right side styling with circular background and border */
+.right {
+    width: 440px;
+    height: 440px;
+    background-image: url('food.png');
+    background-size: cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right::before {
+    width: 430px;
+    height: 430px;
+    border: 2px solid white;
+    content: '';
+    position: absolute;
+    border-radius: 430px;
+    padding: 10px;
+}
+
+/* Left side styling with welcome message, heading, subheading, and button */
+.left p:nth-child(1) {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.left h1 {
+    font-size: 90px;
+    color: white;
+}
+
+.left p:nth-child(3) {
+    color:rgb(49, 159, 196);;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.left button {
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin: 20px 0px;
+}
+
+/* Social media icons styling */
+.SocialMedia {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 200px;
+    background-color: white;
+    font-size: 25px;
+}
+
+.SocialMedia i:hover {
+    color: rgb(49, 159, 196);;
+}
+
+/* Bottom section styling with circular food items */
+#food1,
+#food2 {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 0px 20px;
+}
+
+#food1 {
+    background-image: url('food1.png');
+}
+
+#food2 {
+    background-image: url('food.png');
+}
+
+/* Menu section styling with flex display */
+.menu {
+    display: flex;
+    margin: 0px 100px;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    body {
+        /* Adjust styles for smaller screens */
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Add more specific styles for smaller screens as needed */
+    .top {
+        flex-direction: column; /* Example: Stack navigation links in a column */
+        height: auto; /* Allow the top section to adjust its height based on content */
+    }
+
+    .nav {
+        left: 0; /* Example: Move navigation links to the left for better visibility */
+    }
+
+    
+}
